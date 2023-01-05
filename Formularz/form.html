@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz kontaktowy</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Wypełnij formularz kontaktowy</h1>
+
+<form id="form">
+<div class="form-box">
+    <label for="imie" id="label-name">
+        IMIĘ
+    </label>
+    <input type="text" id="imie" placeholder="Podaj swoje imię">
+</div>
+
+<div class="form-box">
+    <label for="wiek" id="label-wiek">
+        WIEK
+    </label>
+    <input type="text" id="wiek" placeholder="Podaj swój wiek">
+</div>
+
+<div class="form-box">
+    <label for="mail" id="label-mail">
+        E-MAIL
+    </label>
+    <input type="text" id="mail" placeholder="Podaj swój e-mail">
+</div>
+
+
+<div class="form-box">STATUS
+  <select name="stanowisko" id="stanowisko">
+    <option value="student">Student/Uczeń</option>
+    <option value="prakykant">Praktykant/Stażysta</option>
+    <option value="specjalista">Pracownik/Specjalista</option>
+    <option value="specjalista">Inne</option>
+  </select>  
+</div>
+
+<div class="form-box">
+    <label>
+        Czy poleciłbyś nasz kurs znajomym?
+    </label>
+
+    <label for="pol-1">
+        <input type="radio"
+               id="pol-1"
+               name="polecenie">Tak</input>
+
+    <label for="pol-2">
+        <input type="radio"
+                id="pol-2"
+                name="polecenie">Nie</input>
+
+    <label for="pol-3">
+        <input type="radio"
+                id="pol-3"
+                name="polecenie">Możliwe</input>
+</div>
+
+<div class="form-box"></div>
+<label>Który z poniższych kursów planujesz ukończyć jako kolejny?<br><br>
+</label>
+
+    <label for="inp-1">
+        <input type="checkbox"
+               name="inp">angielski</input></label>
+    <label for="inp-2">
+        <input type="checkbox"
+               name="inp">hiszpański</input></label>
+    <label for="inp-3">
+        <input type="checkbox"
+               name="inp">włoski</input></label>
+    <label for="inp-4">
+        <input type="checkbox"
+               name="inp">francuski</input></label>
+
+</div>
+
+<div class="form-box">
+    <label for="comment">
+        Sugestia lub komentarz
+    </label>
+
+    <textarea name="comment" id="comment"
+        placeholder="Wpisz komentarz">
+    </textarea>
+</div>
+
+<button type="przeslij" value="przeslij">
+    Prześlij
+</button>
+
+</div>
+</form>
+</body>
+</html>
